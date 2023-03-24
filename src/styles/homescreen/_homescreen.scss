@@ -1,0 +1,131 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.contenedorProductos{
+  
+  display: flex;
+  width: 120rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+
+  // background-color: red;
+  // width: 40rem;
+  // height: 60rem;
+
+}
+  
+  .productCard{
+  
+      
+    width: 250px;
+    height: 320px;
+    flex: 1 0 21%;
+    background-color:transparent;
+    /* border-color: aqua; */
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+
+    .contenedorBotonesCard{
+        
+        margin-top: 0.3rem;
+        display: flex;
+        flex-direction: row;
+        // background-color: red;
+        width: 24rem;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        // margin-bottom: 4rem;
+        
+        button{
+            padding: 0.7rem;
+            // gap: 1rem;
+            font-size: 1.6rem;
+            background-color: transparent;
+            border-radius: 0.5rem;
+            border: 0.5px solid black;
+            cursor: pointer;
+
+            &:hover{
+              color: gray;
+            }
+        }
+
+    }
+  
+  
+  }
+
+
+
+
+
+
+
+.productDetails{
+
+
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;   
+  font-weight: bold;
+
+
+}
+
+
+.contenedorDetalles{
+
+  p{
+    font-size: 1.6rem;
+  }
+  a{
+    font-size: 1.6rem;
+    text-align: center;
+    display:block
+  }
+
+
+  button{
+    padding: 0.7rem;
+    // gap: 1rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 0.5px solid black;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+
+    &:hover{
+      color: gray;
+    }
+  }
+
+}
+
+
+
+.buttonCloseModal{
+
+
+  background-color: white;
+border: none;
+
+  display: flex;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 94%;
+  font-size: 1.9rem;
+  
+
+
+  
+
+}

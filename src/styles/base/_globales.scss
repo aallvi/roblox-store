@@ -1,0 +1,163 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// html, body, p, label{
+
+//    font-family: v.$fuentePrincipal;
+// }
+
+html{
+   font-family: 'Nunito', sans-serif;
+
+}
+
+
+body{
+   // background-image: url("https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/6/a/2/6a2d8b2fe8a9dec83753ade6d0fe042d87a0ed55.png");
+   background-color: #F2F4F5;
+}
+
+
+.pdfVer{
+   // background-color: red;
+   height: 100vh;
+}
+
+.contenedor {
+   // width: 95%;
+   // max-width: 1200px;
+   // margin: 0 auto;
+   // height: 100%;
+
+
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+
+   display: block;
+}
+
+input{
+   font-family: 'Nunito', sans-serif;
+}
+
+p{
+   font-family: 'Nunito', sans-serif;
+   // margin: 0;
+   // font-size: 1rem;
+}
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+ 
+}
+
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+
+
+
+.renderVacio{
+   font-size: 1.7rem;
+   text-align: center;
+   margin-top: 5rem;
+}
+
+
+.marginTopLoading{
+   margin-top: 15rem;
+}
+
+.bold{
+   font-weight: bold;
+}
+
+.notMargin{
+   margin-top: 3rem;
+
+   @include m.tablet {
+   margin-top: -11rem;
+      
+   }
+}
+
+
+.swal2-container.swal2-center>.swal2-popup {
+
+   width: 45rem;
+}
+
+
+.renderEmpty{
+   p{
+      text-align: center;
+      font-size: 1.7rem;
+      margin-top: 6rem;
+   }
+}
+
+
+.ocultar{
+
+   display: none;
+
+   @include m.telefono {
+       display: unset;
+   }
+
+  }
+
+
+
+
+
+.portal{
+   
+   inset: 8% 22px 40px;
+
+
+}
+
+
+
+.contenedorRutas{
+
+   padding-top: 7rem;
+
+}
+
+
+.swal2-html-container{
+   font-size: 1.7rem!important;
+}
+.swal2-title{
+   font-size: 2.2rem!important;
+}
+
+
+.swal2-actions{
+   // button{
+   //    padding: 0.7rem!important;
+   //    // gap: 1rem;
+   //    font-size: 1.6rem!important;
+   //    background-color: transparent!important;
+   //    border-radius: 0.5rem!important;
+   //    border: 0.5px solid black!important;
+   //    cursor: pointer!important;
+   //    margin: 0 auto!important;
+   //    display: block!important;
+   //    color: black!important;
+  
+   //    &:hover{
+   //      color: gray!important;
+   //    }
+   //  }
+}

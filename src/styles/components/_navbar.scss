@@ -1,0 +1,55 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.contenedorNavbar{
+   position: fixed;
+   width: 100%;
+  
+}
+
+
+
+.navbarUl{
+
+     background-color: #DEE1E3;
+     margin-top: 0;
+     display: flex;
+     width: 100%;
+
+   //   grid-template-columns: 20% 70%;
+     font-size: 1.9rem;
+     font-weight: bold;
+     height: 3rem;
+     align-items: center;
+   //   background-color: red;
+
+
+     li{
+        list-style: none;
+        width: 30rem;
+     }
+
+     
+   
+
+}
+
+
+.BotonNav{
+   color: black;
+   transition: 0.2s;
+
+   &:hover{
+
+
+   border-bottom: 0.2rem solid black;
+
+   }
+}
+
+.BotonNavActive{
+   color: black;
+   border-bottom: 0.2rem solid black;
+}
+
