@@ -1,0 +1,49 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.containerForm{
+
+
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    font-size: 1.7rem;
+    margin: 5rem auto;
+    // background-color: red;
+    height: 30rem;
+
+    span{
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 0.5rem;
+    }
+
+    label{
+        margin-bottom: 0.5rem;
+    }
+
+    input{
+        margin-bottom: 1rem;
+        border-radius: 0.4rem;
+        border: 0.1rem solid rgb(157, 152, 152)
+    }
+
+
+    p{
+        margin-top: 6rem;
+        text-decoration: underline;
+    }
+
+    img{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    
+
+    button{
+        width: 15rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}

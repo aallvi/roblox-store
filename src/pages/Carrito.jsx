@@ -1,11 +1,20 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { eliminarProducto } from '../store/slices/appSlice'
+import { Button } from '../components/Button'
+import { useNavigate } from 'react-router-dom'
 
 export const Carrito = () => {
 
   const {carrito} = useSelector( (state) => state.app  )
   const dispatch = useDispatch()
+
+  let navigate =  useNavigate()
+
+  const irInicio = () => {
+
+    navigate('/')
+  }
 
   console.log(carrito,'carrito')
 
@@ -64,7 +73,7 @@ console.log(reduce)
   <div className='contenedorTotalAPagar'>
       <p  > Total: ${aPagar} </p>
 
-      <button> Ir a pagar </button>
+      <button onClick={ () => navigate('/pagar') }  > Continuar </button>
 
   </div>
 
@@ -73,6 +82,10 @@ console.log(reduce)
 
           <div>
             <h1 style={{marginTop:'14rem'}} >No tienes Robux en el carrito</h1>
+
+                <div style={{width:'fit-content', margin:'0 auto', marginTop:'5rem'}} >
+                    <Button text='Ver Robux' fn={irInicio} />
+                </div>
           </div>
       }
 

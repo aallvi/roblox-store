@@ -1,0 +1,37 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+
+.contenedorEntregasyPagos{
+
+    
+
+}
+
+
+.contenedorInformacion{
+
+
+   
+     
+    width: 70rem;
+    margin: 0 auto;
+    font-size: 1.9rem;
+    margin-top: 4rem;
+
+
+
+    div{
+        margin-bottom: 5rem;
+        text-align: justify;
+    }
+
+
+}
+
+
+.contenedorDudas{
+    max-width: fit-content;
+    margin: 0 auto;
+}

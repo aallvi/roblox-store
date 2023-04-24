@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import { agregarCarrito } from '../store/slices/appSlice'
 import { ProductContext } from './ProductCard'
 import Modal from 'react-modal';
+import { Button } from './Button'
 
 export const ProductButtons = () => {
 
@@ -27,7 +28,7 @@ export const ProductButtons = () => {
 
      Swal.fire(
       {
-        title: 'Robux agregados!',
+        title: '¡Robux agregados!',
         text:`${product.title} a sido añadido al carrito `,
         confirmButtonColor:'green',
       }
@@ -86,9 +87,9 @@ export const ProductButtons = () => {
           
               <h1 style={{textAlign:'center'}} >{product.title}</h1> 
 
-              <p style={{textAlign:'center', marginTop:'5rem'}} > Al hacer el pago entregamos un codigo que debe ser canjeado en la pagina oficial del juego </p>
+              <p style={{textAlign:'center', marginTop:'5rem'}} > Al hacer el pago entregamos un código que debe ser canjeado en la pagina oficial del juego. </p>
 
-              <p style={{textAlign:'center'}}>Para canjearlo, debes iniciar con su usuario y contraseña para despues canjear el codigo que le enviaremos</p>
+              <p style={{textAlign:'center'}}>Para canjearlo, debes iniciar sesion con tu usuario y contraseña para despues ingresar el código entregado.</p>
 
               <a style={{ marginTop:'5rem'}} href=' https://www.roblox.com/redeem'  target='_blank' >  Link a roblox </a>
               <p style={{textAlign:'center'}} >  https://www.roblox.com/redeem </p>
@@ -103,9 +104,8 @@ export const ProductButtons = () => {
        
       </Modal>
       
-
-      <button onClick={agregar} > Agregar al carro </button>
-      <button onClick={openModal} > Ver detalles </button>
+      <Button  fn={agregar}  text='Agregar al carro' />
+      <Button  fn={openModal}  text='Ver detalles' />
 
 
     </div>

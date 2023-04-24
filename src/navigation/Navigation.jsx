@@ -7,6 +7,8 @@ import { Carrito } from '../pages/Carrito'
 import { Entregas } from '../pages/Entregas'
 import {Homescreen} from '../pages/Homescreen'
 import { QuienesSomos } from '../pages/QuienesSomos'
+import { Pagar } from '../pages/Pagar.jsx'
+import { Validar } from '../pages/Validar'
 
 export const Navigation = () => {
 
@@ -28,6 +30,9 @@ export const Navigation = () => {
         <Route path='/entregas' element={ <Entregas/> } />
 
         <Route path='/carrito' element={ <Carrito/> } />
+        <Route path='/pagar' element={ <Pagar/> } />
+        <Route path='/validar-pago' element={ <Validar/> } />
+       
 
     </Routes>
 

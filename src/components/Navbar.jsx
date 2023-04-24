@@ -58,7 +58,7 @@ export const Navbar = () => {
                 isActive ? 'BotonNavActive' : 'BotonNav'
               }
             >
-              Entregas y Pagos
+              Pagos y entregas
             </NavLink>
           </li>
 
